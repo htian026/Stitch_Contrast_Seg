@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Stitch, Contrast, and Segment: Learning a Human Action Segmentation Model Using Trimmed Skeleton Videos">
+    <title>Stitch, Contrast, and Segment: Learning a Human Action Segmentation Model Using Trimmed Skeleton Videos</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="header text-center">
+            <h2>Stitch, Contrast, and Segment: Learning a Human Action Segmentation Model Using Trimmed Skeleton Videos <br> (AAAI 2025)</h2>
+            <h4>
+                Haitao Tian<sup>1*</sup>, Pierre Payeur<sup>1</sup>
+            </h4>
+            <h4><sup>1</sup>University of Ottawa</h4>
+        </div>
+
+        <div class="row">
+            <hr>
+            <h2 class="text-center">Abstract</h2>
+            <p>
+                Existing skeleton-based human action classification models rely on well-trimmed action-specific skeleton videos for both training and testing, precluding their scalability to real-world applications where untrimmed videos exhibiting concatenated actions are predominant. To overcome this limitation, recently introduced skeleton action segmentation models involve untrimmed skeleton videos into end-to-end training. The model is optimized to provide frame-wise predictions for any length of testing videos, simultaneously realizing action localization and classification. Yet, achieving such an improvement imposes frame-wise annotated skeleton videos, which remains time-consuming in practice. This paper features a novel framework for skeleton-based action segmentation trained on short trimmed skeleton videos, but that can run on longer untrimmed videos. The approach is implemented in three steps: Stitch, Contrast, and Segment. First, Stitch proposes a temporal skeleton stitching scheme that treats trimmed skeleton videos as elementary human motions that compose a semantic space and can be sampled to generate multi-action stitched sequences. Contrast learns contrastive representations from stitched sequences with a novel discrimination pretext task that enables a skeleton encoder to learn meaningful action-temporal contexts to improve action segmentation. Finally, Segment relates the proposed method to action segmentation by learning a segmentation layer while handling particular data availability. Experiments involve a trimmed source dataset and an untrimmed target dataset in an adaptation formulation for real-world skeleton-based human action segmentation to evaluate the effectiveness of the proposed method.
+            <p>
+            <div class="text-center">
+                <h3>
+                    <a href="#" class="text-info">[Paper]</a>
+                    <a href="https://github.com/htian026/GCL" class="text-info">[Code]</a>
+                    <a href="#" class="text-info">[Appendix]</a>
+                </h3>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
